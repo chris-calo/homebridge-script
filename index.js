@@ -1,8 +1,7 @@
 var Service;
 var Characteristic;
 
-var sys = require('sys');
-    exec = require('child_process').exec;
+var exec = require('child_process').exec;
     assign = require('object-assign');
     fileExists = require('file-exists');
 
@@ -13,7 +12,7 @@ module.exports = function(homebridge) {
 }
 
 function puts(error, stdout, stderr) {
-   sys.puts(stdout)
+   console.log(stdout)
 }
 
 function scriptAccessory(log, config) {
